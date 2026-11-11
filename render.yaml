@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: agentisend-contact-form
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    autoDeployTrigger: off
+    envVars:
+      - key: AGENTISEND_API_KEY
+        sync: false
+      - key: MAIL_FROM
+        sync: false
+      - key: CONTACT_TO
+        sync: false
+      - key: NODE_VERSION
+        value: "24"
