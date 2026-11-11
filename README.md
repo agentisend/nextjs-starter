@@ -4,6 +4,7 @@ A Next.js App Router contact form that sends email through [AgentiSend](https://
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fagentisend%2Fnextjs-starter&env=AGENTISEND_API_KEY,MAIL_FROM,CONTACT_TO&envDescription=An%20AgentiSend%20sending%20key%2C%20a%20From%20address%20on%20a%20verified%20domain%2C%20and%20the%20address%20that%20receives%20messages&envLink=https%3A%2F%2Fgithub.com%2Fagentisend%2Fnextjs-starter%2Fblob%2Fmain%2F.env.example&project-name=agentisend-contact-form&repository-name=agentisend-contact-form)
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/agentisend/nextjs-starter)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/agentisend-nextjs-contact-form)
 
 - Messages go to one address, `CONTACT_TO`. The visitor's address becomes Reply-To, so you answer from your inbox. A public deployment cannot be used to mail anyone else.
 - The idempotency key is a hash of the submission, so a double-click or a retried request sends one email.
